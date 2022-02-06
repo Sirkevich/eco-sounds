@@ -1,0 +1,153 @@
+:root {
+    --black-color:#000;
+    --color-gold: #bdae82;
+    --color-white: #fff;
+    --font1: 20px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font1);
+}
+
+.link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--color-gold);
+    transition: 0.3s;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header {
+    background-color: var(--black-color);
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/svg/logo2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.nav-logo:hover {
+    background-image: url(../assets/svg/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links-item {
+    color: var(--color-white);
+    list-style: none;
+}
+
+.nav-links-item:hover{
+    cursor: pointer;
+    color: var(--color-gold);
+    transition: 0.3s;
+}
+
+.nav-links-item-active {
+    color: var(--color-gold);
+}
+
+.main {
+
+}
+
+.main-container {
+  
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url(../assets/img/forest.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: 0.5s;
+}
+
+.main-btn {
+    width: 160px;
+    height: 160px;
+    background: url(../assets/svg/play.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;   
+}
+
+.pause-btn {
+    width: 160px;
+    height: 160px;
+    background: url(../assets/svg/pause.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;   
+}
+
+.main-btn:hover {
+    filter: brightness(.85);
+    transition: 0.3s;
+}
+
+.footer {
+    color: var(--color-white);
+    padding: 5px 20px;
+    background-color: var(--black-color);
+}
+
+.footer-logo {
+    background-image: url(../assets/svg/rss.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 135px;
+    height: 50px;
+}
+
+.footer-logo:hover {
+    background-image: url(../assets/svg/rss2.svg);
+    width: 135px;
+    height: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-author {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
