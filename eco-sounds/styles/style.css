@@ -9,6 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: var(--font1);
+    overflow-y: hidden;
 }
 
 .link {
@@ -81,16 +82,13 @@ body {
     color: var(--color-gold);
 }
 
-.main {
-
-}
-
 .main-container {
   
     width: 100%;
     height: calc(100vh - 120px);
     background-image: url(../assets/img/forest.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center; 
