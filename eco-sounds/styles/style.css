@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: var(--font1);
     overflow-y: hidden;
+    background-color: var(--black-color);
 }
 
 .link {
@@ -48,16 +49,21 @@ body {
 .nav-logo {
     width: 50px;
     height: 50px;
-    background-image: url(../assets/svg/logo2.svg);
+    background-image: url(../assets/svg/logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
     transition: 0.3s;
 }
 
+
+.nav-logo-active {
+    background-image: url(../assets/svg/logo2.svg);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .nav-logo:hover {
-    background-image: url(../assets/svg/logo.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../assets/svg/logo2.svg);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -83,9 +89,9 @@ body {
 }
 
 .main-container {
-  
+    padding-top: 4px;
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 123px);
     background-image: url(../assets/img/forest.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,8 +125,8 @@ body {
 }
 
 .footer {
+    height: 60px;
     color: var(--color-white);
-    padding: 5px 20px;
     background-color: var(--black-color);
 }
 
@@ -142,6 +148,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2px;
 }
 
 .about-author {

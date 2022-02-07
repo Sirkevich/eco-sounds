@@ -1,3 +1,23 @@
+// --------chnange nav-logo-------------
+
+const navLogo = document.querySelector('.nav-logo');
+
+function returnMain(event) {
+            
+            document.querySelectorAll('.nav-links-item').forEach(elem => elem.classList.remove('nav-links-item-active'))
+            
+             playBtn.classList.add('pause-btn');
+             navLogo.classList.toggle('nav-logo-active');
+            if (event.target.classList.contains('nav-logo')) {
+                mainImg.style.backgroundImage = 'url(assets/img/forest.jpg)';
+                audio.src='assets/audio/forest.mp3';
+                audio.play();
+    }
+}
+navLogo.addEventListener('click', returnMain);
+
+
+
 // --------chnange images-------------
 
 const navBtn = document.querySelector('.nav-links');
@@ -6,6 +26,7 @@ const mainImg = document.querySelector('.main-container');
 function changeImage(event) {
 
     playBtn.classList.add('pause-btn');
+    navLogo.classList.remove('nav-logo-active');
 
             if (event.target.classList.contains('solovei')) {
                 mainImg.style.backgroundImage = 'url(assets/img/solovey.jpg)';
@@ -64,7 +85,7 @@ navLinkAvtive();
 
 const playBtn = document.querySelector('.main-btn');
 
-const stopPlaying = () => {
+function stopPlaying () {
     if (playBtn.classList.contains('pause-btn')) {
         playBtn.classList.remove('pause-btn');
         audio.pause();
